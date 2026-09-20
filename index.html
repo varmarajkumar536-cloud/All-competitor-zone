@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Prepare for SSC, Railway, Banking, Defence and other competitive examinations with quality courses and study materials.">
+
+<title>Competition Classes | Online Competitive Exam Preparation</title>
+
+<style>
+/* =========================
+   GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 21px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.logo-text span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-btn {
+    background: #2563eb;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 7px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #eff6ff, #ffffff);
+    padding: 75px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #6b7280;
+    max-width: 620px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    background: white;
+}
+
+.btn-outline:hover {
+    background: #eff6ff;
+}
+
+.hero-card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.hero-card-top {
+    background: #2563eb;
+    color: white;
+    padding: 25px;
+    border-radius: 13px;
+    margin-bottom: 18px;
+}
+
+.hero-card-top h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.stat {
+    background: #f3f4f6;
+    padding: 18px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 22px;
+    color: #2563eb;
+}
+
+.stat small {
+    color: #6b7280;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+}
+
+.search-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.search-box button {
+    border: 0;
+    background: #2563eb;
+    color: white;
+    padding: 0 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #6b7280;
+}
+
+/* =========================
+   COURSES
+========================= */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.09);
+}
+
+.course-image {
+    height: 145px;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-content h3 {
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.course-content p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.course-link {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    background: #ffffff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.feature {
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.feature h3 {
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================
+   STUDY MATERIAL
+========================= */
+
+.material-section {
+    background: #f1f5f9;
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.material-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+.material-card h3 {
+    margin-bottom: 8px;
+}
+
+.material-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.download {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* =========================
+   BLOG
+========================= */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.blog-image {
+    height: 170px;
+    background: linear-gradient(135deg, #0f172a, #334155);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content small {
+    color: #2563eb;
+}
+
+.blog-content h3 {
+    margin: 8px 0;
+}
+
+.blog-content p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    background: #f8fafc;
+}
+
+.faq {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 18px;
+    color: #6b7280;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .plus {
+    transform: rotate(45deg);
+}
+
+.plus {
+    transition: .3s;
+    font-size: 22px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    padding: 65px 0;
+}
+
+.cta-box {
+    background: #2563eb;
+    color: white;
+    padding: 55px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.cta-box h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.cta-box p {
+    opacity: .9;
+    margin-bottom: 25px;
+}
+
+.cta-box .btn {
+    background: white;
+    color: #2563eb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111827;
+    color: #d1d5db;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer-column a {
+    display: block;
+    margin-bottom: 9px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-about {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #111827;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    display: none;
+    z-index: 2000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .material-grid,
+    .blog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .course-grid,
+    .feature-grid,
+    .material-grid,
+    .blog-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 13px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box {
+        padding: 35px 20px;
+    }
+
+    .cta-box h2 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+            <div class="logo-icon">CC</div>
+            <div class="logo-text">
+                Competition<span>Classes</span>
+            </div>
+        </a>
+
+        <div class="menu-btn" id="menuBtn">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#materials">Free Books</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <span class="badge">
+                🎯 Your Success Starts Here
+            </span>
+
+            <h1>
+                Prepare Today.<br>
+                <span>Achieve Tomorrow.</span>
+            </h1>
+
+            <p>
+                Get quality courses, study materials, practice resources
+                and useful guidance for SSC, Railway, Banking, Defence
+                and other competitive examinations.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">
+                    Explore Courses
+                </a>
+
+                <a href="#materials" class="btn btn-outline">
+                    Free Study Material
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-card-top">
+                <h3>Competitive Exam Preparation</h3>
+                <p>Learn smarter and prepare with confidence.</p>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <strong>25+</strong>
+                    <small>Courses</small>
+                </div>
+
+                <div class="stat">
+                    <strong>500+</strong>
+                    <small>Materials</small>
+                </div>
+
+                <div class="stat">
+                    <strong>10K+</strong>
+                    <small>Learners</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SEARCH
+========================= -->
+
+<div class="search-section">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search courses, exams, study material..."
+            >
+
+            <button onclick="searchContent()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     COURSES
+========================= -->
+
+<section id="courses">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Popular Courses</h2>
+            <p>Choose your target examination and start preparing.</p>
+        </div>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    SSC
+                </div>
+
+                <div class="course-content">
+
+                    <h3>SSC Preparation</h3>
+
+                    <p>
+                        Prepare for SSC CGL, CHSL, MTS and other examinations.
+                    </p>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    RRB
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Railway Exams</h3>
+
+                    <p>
+                        Study resources for RRB NTPC, Group D and other exams.
+                    </p>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    BANK
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Banking Exams</h3>
+
+                    <p>
+                        Prepare for banking examinations with structured resources.
+                    </p>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    DEF
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Defence Exams</h3>
+
+                    <p>
+                        Preparation resources for NDA, CDS and other defence exams.
+                    </p>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="features" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Why Choose Us?</h2>
+
+            <p>
+                Everything you need for effective exam preparation.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">📚</div>
+
+                <h3>Quality Content</h3>
+
+                <p>
+                    Carefully prepared learning resources for competitive exams.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🎯</div>
+
+                <h3>Exam Focused</h3>
+
+                <p>
+                    Study material designed around important examination topics.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">📱</div>
+
+                <h3>Learn Anywhere</h3>
+
+                <p>
+                    Access your learning resources from mobile, tablet or computer.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Easy Learning</h3>
+
+                <p>
+                    Simple explanations and organized study resources.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FREE MATERIAL
+========================= -->
+
+<section class="material-section" id="materials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Free Study Material</h2>
+
+            <p>
+                Useful resources to support your preparation.
+            </p>
+
+        </div>
+
+
+        <div class="material-grid">
+
+            <div class="material-card">
+
+                <h3>📘 General Knowledge</h3>
+
+                <p>
+                    Important GK topics, facts and revision material.
+                </p>
+
+                <a href="#" class="download">
+                    Read Material →
+                </a>
+
+            </div>
+
+
+            <div class="material-card">
+
+                <h3>🧮 Mathematics</h3>
+
+                <p>
+                    Practice important mathematics concepts and questions.
+                </p>
+
+                <a href="#" class="download">
+                    Read Material →
+                </a>
+
+            </div>
+
+
+            <div class="material-card">
+
+                <h3>📝 English</h3>
+
+                <p>
+                    Vocabulary, grammar, synonyms, antonyms and practice questions.
+                </p>
+
+                <a href="#" class="download">
+                    Read Material →
+                </a>
+
+            </div>
+
+
+            <div class="material-card">
+
+                <h3>🌎 Current Affairs</h3>
+
+                <p>
+                    Important current events and general awareness resources.
+                </p>
+
+                <a href="#" class="download">
+                    Read Material →
+                </a>
+
+            </div>
+
+
+            <div class="material-card">
+
+                <h3>🔬 General Science</h3>
+
+                <p>
+                    Important Physics, Chemistry and Biology study material.
+                </p>
+
+                <a href="#" class="download">
+                    Read Material →
+                </a>
+
+            </div>
+
+
+            <div class="material-card">
+
+                <h3>📄 Previous Papers</h3>
+
+                <p>
+                    Practice previous examination questions for better preparation.
+                </p>
+
+                <a href="#" class="download">
+                    View Papers →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BLOG
+========================= -->
+
+<section id="blog">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Latest Articles</h2>
+
+            <p>
+                Helpful articles and preparation tips.
+            </p>
+
+        </div>
+
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    EXAM TIPS
+                </div>
+
+                <div class="blog-content">
+
+                    <small>Preparation</small>
+
+                    <h3>
+                        How to Start Your Competitive Exam Preparation
+                    </h3>
+
+                    <p>
+                        Learn how to organize your preparation and create
+                        a practical study routine.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    STUDY PLAN
+                </div>
+
+                <div class="blog-content">
+
+                    <small>Study Guide</small>
+
+                    <h3>
+                        How to Make an Effective Study Plan
+                    </h3>
+
+                    <p>
+                        Simple strategies for managing subjects, revision
+                        and practice.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    CURRENT
+                </div>
+
+                <div class="blog-content">
+
+                    <small>General Awareness</small>
+
+                    <h3>
+                        Important Topics You Should Revise
+                    </h3>
+
+                    <p>
+                        Focus on important areas and regularly revise
+                        what you have studied.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="faq-section" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Find answers to common questions.
+            </p>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    How can I start preparing?
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Choose your target examination, select the relevant
+                    course or study material and start with the basic topics.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Is study material available for free?
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Yes. You can provide selected free notes, books,
+                    practice questions and other educational resources.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Which examinations are covered?
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    The website can cover SSC, Railway, Banking, Defence,
+                    Teaching and other competitive examinations.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+                    Can I access the website on mobile?
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    Yes. The website is responsive and works on smartphones,
+                    tablets and desktop computers.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>Ready to Start Your Preparation?</h2>
+
+            <p>
+                Explore courses and study materials designed to help you
+                prepare with confidence.
+            </p>
+
+            <a href="#courses" class="btn">
+                Explore Courses
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+                    Competition Classes
+                </div>
+
+                <p class="footer-about">
+                    An educational platform providing courses,
+                    study materials and useful resources for
+                    competitive examination preparation.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#materials">Free Books</a>
+                <a href="#blog">Blog</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Exams</h3>
+
+                <a href="#">SSC</a>
+                <a href="#">Railway</a>
+                <a href="#">Banking</a>
+                <a href="#">Defence</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Important</h3>
+
+                <a href="#faq">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Competition Classes. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Toast -->
+<div class="toast" id="toast">
+    Please enter something to search.
+</div>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
+
+
+/* Close mobile menu after clicking link */
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================
+   FAQ ACCORDION
+========================= */
+
+const faqQuestions =
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(function(question) {
+
+    question.addEventListener("click", function() {
+
+        const item = this.parentElement;
+
+        document.querySelectorAll(".faq-item")
+        .forEach(function(otherItem) {
+
+            if (otherItem !== item) {
+                otherItem.classList.remove("active");
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchContent() {
+
+    const input =
+        document.getElementById("searchInput");
+
+    const value =
+        input.value.trim().toLowerCase();
+
+    if (value === "") {
+
+        showToast("Please enter something to search.");
+
+        return;
+
+    }
+
+    const sections = [
+        "courses",
+        "materials",
+        "blog"
+    ];
+
+    let found = false;
+
+    sections.forEach(function(id) {
+
+        const section =
+            document.getElementById(id);
+
+        if (
+            section &&
+            section.innerText.toLowerCase().includes(value)
+        ) {
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+
+            found = true;
+
+        }
+
+    });
+
+    if (!found) {
+
+        showToast(
+            "No matching content found."
+        );
+
+    }
+
+}
+
+
+/* Search with Enter key */
+
+document.getElementById("searchInput")
+.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+
+        searchContent();
+
+    }
+
+});
+
+
+/* =========================
+   TOAST MESSAGE
+========================= */
+
+function showToast(message) {
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.innerText = message;
+
+    toast.style.display = "block";
+
+    setTimeout(function() {
+
+        toast.style.display = "none";
+
+    }, 2500);
+
+}
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+const copyright =
+document.querySelector(".copyright");
+
+copyright.innerHTML =
+"© " + new Date().getFullYear() +
+" Competition Classes. All Rights Reserved.";
+
+</script>
+
+</body>
+</html>
